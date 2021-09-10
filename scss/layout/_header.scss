@@ -1,0 +1,37 @@
+header{
+
+    grid-area: header;
+
+    @include flexy($dir:row ,$just:space-between,$wrap:nowrap);
+
+    align-items: center;
+
+
+    & svg, & img, & span{
+        margin: 0 10px;
+    }
+
+    & svg::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        color: yellow;
+        background-color: yellow;
+    }
+    
+
+    & h2{
+        border:2px solid red;
+        }
+
+    .bell{
+        margin-left: auto;
+    }
+
+
+       
+
+
+}
+

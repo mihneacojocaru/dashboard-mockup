@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
-// body{
 
-// }
+
+body{
+
+    display: grid;
+    grid-template-columns: minmax(100px,1fr);
+    grid-template-rows: 60px auto;
+    font-family: $font-stack-primary;
+    background-color: #fff;
+    @include mq('sm'){
+
+          grid-template-areas: "header" "nav" "main";
+    }
+
+    @include mq('med'){
+        grid-template-columns: 50px 1fr;
+        grid-template-areas: "header header " 
+            "nav main" "nav main";
+    }
+
+
+}
+
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+

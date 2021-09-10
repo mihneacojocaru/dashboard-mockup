@@ -1,6 +1,21 @@
 @import 'utilities/variables',
         'utilities/mixins';
 
+        //variables
 
 
-@import 'base/base';
+        //base styles
+
+        //layout
+
+
+        //components
+
+
+//https://necolas.github.io/normalize.css/8.0.1/normalize.css --> CSS Normalizer for base/reset
+@import 'base/reset', 
+        'base/base';
+
+@import 'layout/header',
+        'layout/nav',
+        'layout/main';

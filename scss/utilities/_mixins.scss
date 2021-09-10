@@ -4,7 +4,11 @@
     flex-direction: $dir;
     flex-wrap: $wrap;
     justify-content: $just;
+
 }
+
+
+
 
 @mixin mq($break) {
 
@@ -36,3 +40,7 @@
 }
 
 
+
+%exemplu {
+    border: 2px solid blue;
+}
