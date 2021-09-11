@@ -7,9 +7,6 @@
 
 }
 
-
-
-
 @mixin mq($break) {
 
     $value:map-get($map: $breakpoints, $key:$break );
