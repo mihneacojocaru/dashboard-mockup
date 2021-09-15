@@ -31,11 +31,13 @@
 }
 
 @mixin buttonBehaviour {
-  :hover {
+  &:hover {
     background-color: $secondary-background;
+    border-color: $secondary-background;
     cursor: pointer;
   }
-  :active {
+  &:active {
     background-color: $primary-background;
+    border-color: $primary-background;
   }
 }

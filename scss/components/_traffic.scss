@@ -1,3 +1,23 @@
 .traffic {
-  //
+  .buttons {
+    @include flexy($disp: flex, $dir: row, $wrap: null, $just: space-evenly);
+    align-items: center;
+    &> span:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+
+  .selectedBtn {
+    border: 2px solid $button-green;
+    background-color: $button-green;
+    border-radius: 25px;
+    padding: 0.5em;
+    color: $primary-fontColor;
+  }
+}
+.chart1{
+  width: 490px;
+  height: auto;
+  border-radius: 0;
 }

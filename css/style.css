@@ -361,6 +361,11 @@ body {
   }
 }
 
+h2, h3 {
+  padding: 10px;
+  font-weight: 400;
+}
+
 .icon {
   width: 50px;
   height: auto;
@@ -445,9 +450,6 @@ main {
   display: flex;
   align-items: center;
 }
-.dashboard h2 {
-  padding: 10px;
-}
 .dashboard input {
   height: 3.4em;
   width: 32em;
@@ -468,12 +470,14 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.alert :hover {
+.alert .alertBtn:hover {
   background-color: #4d4d73;
+  border-color: #4d4d73;
   cursor: pointer;
 }
-.alert :active {
+.alert .alertBtn:active {
   background-color: #7476c0;
+  border-color: #7476c0;
 }
 .alert #alertClose {
   padding-right: 10px;
@@ -482,6 +486,39 @@ main {
 .moveRight {
   transform: translateX(110%);
   transition: 0.8s ease;
+}
+
+.traffic .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.traffic .buttons > span:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.traffic .selectedBtn {
+  border: 2px solid #83c88a;
+  background-color: #83c88a;
+  border-radius: 25px;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.chart1 {
+  width: 490px;
+  height: auto;
+  border-radius: 0;
+}
+
+.daily-traffic {
+  border: 1px solid gray;
+}
+
+.mobile-user {
+  border: 1px solid gray;
+  border-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

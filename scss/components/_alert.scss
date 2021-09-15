@@ -7,9 +7,8 @@
     padding: 10px;
     border-radius: 10px;
     @include flexy($disp: flex, $dir: null, $wrap: null, $just: space-between);
+    @include buttonBehaviour;
   }
-
-  @include buttonBehaviour;
 
   #alertClose {
     padding-right: 10px;
