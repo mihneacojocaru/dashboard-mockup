@@ -1,0 +1,41 @@
+.status-bar {
+  @include flexy($dir: row, $just: space-between, $wrap: nowrap);
+  align-items: center;
+
+  background-color: $primary-background;
+  color: $primary-fontColor;
+  padding: 8px;
+
+  .bell {
+    width: 45px;
+    height: auto;
+    border-right: 1px solid white;
+    padding-right: 12px;
+    position: relative;
+  }
+
+  .bell::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $status-green;
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+
+  .bell,
+  & img,
+  & span {
+    margin: 0 7px;
+  }
+
+  & h2 {
+    font-weight: 400;
+  }
+
+  .bell {
+    margin-left: auto;
+  }
+}

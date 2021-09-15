@@ -1,3 +1,17 @@
-nav{
-    grid-area: nav;
+nav {
+  grid-area: nav;
+  padding: 0 1.5em;
+  margin: 0;
+  @include flexy($disp: flex, $dir: row, $wrap: null, $just: space-evenly);
+  align-items: center;
+  background-color: $secondary-background;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.icon:active {
+  transform: scale(1);
+  transition: 0.1s ease;
 }

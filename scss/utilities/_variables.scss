@@ -1,6 +1,18 @@
+$breakpoints: (
+  "sm": 100px,
+  "med": 768px,
+  "lg": 1024px,
+);
 
-$breakpoints:('sm':100px,'med':768px,'lg':1024px);
+$font-stack-primary: sans-serif;
 
+//Colors
 
+$primary-background: #7476c0;
+$secondary-background: #4d4d73;
 
-$font-stack-primary:sans-serif;
+$primary-fontColor: #fff;
+
+$status-green: greenyellow;
+$status-red: red;
+$gray-background: rgb(247, 247, 247);

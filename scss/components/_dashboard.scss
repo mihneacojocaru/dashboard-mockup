@@ -1,0 +1,14 @@
+.dashboard {
+  @include flexy($disp: flex, $dir: null, $wrap: null, $just: null);
+  align-items: center;
+  h2 {
+    padding: 10px;
+  }
+  & input {
+    height: 3.4em;
+    width: 32em;
+    text-align: center;
+    border: none;
+    background-color: $gray-background;
+  }
+}

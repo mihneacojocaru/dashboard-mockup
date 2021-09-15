@@ -1,21 +1,19 @@
-@import 'utilities/variables',
-        'utilities/mixins';
+@import "utilities/variables", "utilities/mixins";
 
-        //variables
+//variables
 
+//base styles
 
-        //base styles
+//layout
 
-        //layout
-
-
-        //components
-
+//components
 
 //https://necolas.github.io/normalize.css/8.0.1/normalize.css --> CSS Normalizer for base/reset
-@import 'base/reset', 
-        'base/base';
+@import "base/reset", "base/base";
 
-@import 'layout/header',
-        'layout/nav',
-        'layout/main';
+@import "layout/header", "layout/nav", "layout/main";
+
+@import "components/statusBar", "components/dashboard", "components/alert",
+  "components/traffic", "components/dailyTraffic", "components/mobileUser",
+  "components/socialStats", "components/newMembers", "components/recentActivity",
+  "components/messages", "components/settings";

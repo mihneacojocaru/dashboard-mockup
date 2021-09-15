@@ -346,7 +346,6 @@ template {
 body {
   display: grid;
   grid-template-columns: minmax(100px, 1fr);
-  grid-template-rows: 60px auto;
   font-family: sans-serif;
   background-color: #fff;
 }
@@ -362,9 +361,11 @@ body {
   }
 }
 
-svg {
-  width: 30px;
-  height: 30px;
+.icon {
+  width: 50px;
+  height: auto;
+  fill: white;
+  padding: 7px;
 }
 
 img {
@@ -375,36 +376,112 @@ img {
 
 header {
   grid-area: header;
+  margin: 0;
+}
+
+nav {
+  grid-area: nav;
+  padding: 0 1.5em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #4d4d73;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.icon:active {
+  transform: scale(1);
+  transition: 0.1s ease;
+}
+
+main {
+  grid-area: main;
+}
+
+.status-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  background-color: #7476c0;
+  color: #fff;
+  padding: 8px;
 }
-header svg, header img, header span {
-  margin: 0 10px;
+.status-bar .bell {
+  width: 45px;
+  height: auto;
+  border-right: 1px solid white;
+  padding-right: 12px;
+  position: relative;
 }
-header svg::after {
+.status-bar .bell::before {
   content: "";
-  position: absolute;
   width: 10px;
   height: 10px;
-  color: yellow;
-  background-color: yellow;
+  border-radius: 50%;
+  background-color: greenyellow;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
-header h2 {
-  border: 2px solid red;
+.status-bar .bell, .status-bar img, .status-bar span {
+  margin: 0 7px;
 }
-header .bell {
+.status-bar h2 {
+  font-weight: 400;
+}
+.status-bar .bell {
   margin-left: auto;
 }
 
-nav {
-  grid-area: nav;
+.dashboard {
+  display: flex;
+  align-items: center;
+}
+.dashboard h2 {
+  padding: 10px;
+}
+.dashboard input {
+  height: 3.4em;
+  width: 32em;
+  text-align: center;
+  border: none;
+  background-color: #f7f7f7;
 }
 
-main {
-  grid-area: main;
+.alert {
+  padding: 15px 30px;
+  overflow: hidden;
+}
+.alert .alertBtn {
+  background-color: #7476c0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.alert :hover {
+  background-color: #4d4d73;
+  cursor: pointer;
+}
+.alert :active {
+  background-color: #7476c0;
+}
+.alert #alertClose {
+  padding-right: 10px;
+}
+
+.moveRight {
+  transform: translateX(110%);
+  transition: 0.8s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

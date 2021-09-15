@@ -1,0 +1,23 @@
+.alert {
+  //
+  padding: 15px 30px;
+  .alertBtn {
+    background-color: $primary-background;
+    color: $primary-fontColor;
+    padding: 10px;
+    border-radius: 10px;
+    @include flexy($disp: flex, $dir: null, $wrap: null, $just: space-between);
+  }
+
+  @include buttonBehaviour;
+
+  #alertClose {
+    padding-right: 10px;
+  }
+  overflow: hidden;
+}
+
+.moveRight {
+  transform: translateX(110%);
+  transition: 0.8s ease;
+}
