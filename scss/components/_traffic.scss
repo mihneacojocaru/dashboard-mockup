@@ -16,9 +16,15 @@
     color: $primary-fontColor;
   }
 }
-.chart1{
-  width: $element-width;
-  max-width: $max-element-width;
-  height: auto;
-  border-radius: 0;
+// .traffic-chart{
+//   width: $element-width;
+//   max-width: $max-element-width;
+//   height: auto;
+//   border-radius: 0;
+// }
+
+
+.traffic-chart{
+  margin: 0 auto;
+  width: 90%;
 }

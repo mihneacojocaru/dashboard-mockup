@@ -506,11 +506,9 @@ main {
   color: #fff;
 }
 
-.chart1 {
+.traffic-chart {
+  margin: 0 auto;
   width: 90%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 0;
 }
 
 .daily-traffic {

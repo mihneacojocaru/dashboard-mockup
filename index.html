@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
     <title>Dashboard</title>
   </head>
   <body>
@@ -90,20 +92,26 @@
           </div>
         </div>
         <div class="traffic-graph">
-          <img class="chart1" src="assets/charts_prov/chart1.png" alt="" />
+             <canvas class="traffic-chart">
+
+             </canvas>
         </div>
       </section>
       <section class="daily-traffic">
         <h3>DAILY TRAFFIC</h3>
         <div class="daily-graph">
-          <img class="chart1" src="assets/charts_prov/chart2.png" alt="" />
-        </div>
+            <canvas class="daily-chart">
+
+            </canvas>
+       </div>
       </section>
       <section class="mobile-user">
         <h3>MOBILE USERS</h3>
         <div class="mobile-graph">
-          <img src="assets/charts_prov/chart3.png" alt="" class="chart1" />
-        </div>
+            <canvas class="mobile-chart">
+
+            </canvas>
+       </div>
       </section>
       <section class="social-stats">
         <h3>SOCIAL STATS</h3>
@@ -257,6 +265,8 @@
         </div>
     </section>
     </main>
+    <script src="javaScript/trafficData.js"></script>
+    <script src="javaScript/functions.js"></script>
     <script src="javaScript/main.js"></script>
   </body>
 </html>
