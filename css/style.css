@@ -507,7 +507,7 @@ main {
 }
 
 .chart1 {
-  width: 490px;
+  width: 315px;
   height: auto;
   border-radius: 0;
 }
@@ -535,7 +535,7 @@ main {
   border: 1px solid gray;
   border-radius: 5px;
   background-color: #f7f7f7;
-  width: 380px;
+  width: 315px;
   height: 120px;
   margin: 10px;
   display: flex;
@@ -583,7 +583,7 @@ main {
   align-items: center;
   border-bottom: 1px solid gray;
   padding: 10px 0;
-  width: 380px;
+  width: 315px;
 }
 .new-members .member-card img {
   width: 80px;
@@ -617,7 +617,7 @@ main {
   align-items: center;
   border-bottom: 1px solid gray;
   padding: 10px 0;
-  width: 380px;
+  width: 315px;
 }
 .recent-activity .member-card-2 img {
   width: 80px;
@@ -646,7 +646,7 @@ main {
   padding: 10px 0;
 }
 .messages .messages-container input {
-  width: 380px;
+  width: 315px;
   margin: 15px 0;
   padding: 10px;
   background-color: #f7f7f7;
@@ -655,7 +655,7 @@ main {
 }
 .messages .messages-container textarea {
   padding: 10px;
-  width: 380px;
+  width: 315px;
   background-color: #f7f7f7;
   border: 1px solid gray;
   border-radius: 5px;
@@ -663,7 +663,7 @@ main {
 .messages .messages-container span {
   margin: 15px 0;
   padding: 10px;
-  width: 380px;
+  width: 315px;
   border-radius: 5px;
   text-align: center;
   background-color: #7476c0;
@@ -680,6 +680,8 @@ main {
 }
 
 .settings {
+  border: 1px solid gray;
+  border-top: 0;
   padding: 10px 0;
 }
 .settings .settings-container {
@@ -696,7 +698,7 @@ main {
 }
 .settings .settings-container > * {
   margin: 10px 0;
-  width: 380px;
+  width: 315px;
 }
 .settings .timeZones {
   height: 50px;
@@ -710,7 +712,7 @@ main {
   align-items: center;
 }
 .settings .setting-buttons button {
-  padding: 20px 60px;
+  padding: 20px 50px;
   border-radius: 5px;
   border: 1px solid #fff;
   background-color: gray;

@@ -8,7 +8,7 @@
     padding: 10px 0;
 
     input{
-      width: 380px;
+      width: $element-width;
       margin: 15px 0;
       padding: 10px;
       background-color: $gray-background;
@@ -17,7 +17,7 @@
     }
     textarea{
       padding: 10px;
-      width: 380px;
+      width: $element-width;
       background-color: $gray-background;
       border: 1px solid $gray-color;
       border-radius: 5px;
@@ -25,7 +25,7 @@
     span{
       margin: 15px 0;
       padding: 10px;
-      width: 380px;
+      width: $element-width;
       border-radius: 5px;
       text-align: center;
       background-color: $primary-background;

@@ -1,4 +1,6 @@
 .settings {
+  border: 1px solid $gray-color;
+  border-top: 0;
   padding: 10px 0;
   .settings-container{
     @include flexy($disp: flex, $dir: column, $just: null);
@@ -12,7 +14,7 @@
 
   .settings-container > *{
     margin: 10px 0;
-    width: 380px;
+    width: $element-width;
   }
 
   .timeZones{
@@ -25,7 +27,7 @@
     @include flexy($disp: flex, $dir: row, $just: space-between);
     align-items: center;
     button{
-      padding: 20px 60px;
+      padding: 20px 50px;
       border-radius: 5px;
       border: 1px solid $primary-fontColor;
       background-color: $gray-color;
