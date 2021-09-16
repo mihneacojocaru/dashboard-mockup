@@ -28,7 +28,8 @@
     @include flexy($disp: flex, $dir: row, $just: space-between);
     align-items: center;
     button{
-      padding: 20px 50px;
+      width: 48%;
+      padding: 20px 0;
       border-radius: 5px;
       border: 1px solid $primary-fontColor;
       background-color: $gray-color;

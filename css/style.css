@@ -720,7 +720,8 @@ main {
   align-items: center;
 }
 .settings .setting-buttons button {
-  padding: 20px 50px;
+  width: 48%;
+  padding: 20px 0;
   border-radius: 5px;
   border: 1px solid #fff;
   background-color: gray;
