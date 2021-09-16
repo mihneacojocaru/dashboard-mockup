@@ -1,3 +1,43 @@
 .social-stats {
-  //
+  border: 1px solid $gray-color;
+  border-top: 0;
+  .social-cards{
+    @include flexy($disp: flex, $dir: column, $wrap: null, $just: center);
+    align-items: center;
+  }
+
+  .facebook, .instagram, .twitter{
+    border: 1px solid $gray-color;
+    border-radius: 5px;
+    background-color: $gray-background;
+    width: 380px;
+    height: 120px;
+    margin: 10px;
+    @include flexy($disp: flex, $dir: row, $just: null);
+    align-items: center;
+  }
+  .social-icon{
+    background-color: $primary-background;
+    margin: 25px 20px 20px 20px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    svg{
+      height: 40px;
+      width: 40px;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+      position: absolute;
+    }
+  }
+
+  .socialPlatform{
+    color: $secondary-background;
+  }
+  .subscriptions{
+    font-size: 50px;
+    font-weight: 300;
+  }
 }
