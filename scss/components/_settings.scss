@@ -15,6 +15,7 @@
   .settings-container > *{
     margin: 10px 0;
     width: $element-width;
+    max-width: $max-element-width;
   }
 
   .timeZones{
