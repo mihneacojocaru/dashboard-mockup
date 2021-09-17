@@ -1,3 +1,16 @@
 main{
     grid-area: main;
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .d-flex{
+        @include flexy($disp: flex, $dir: row, $wrap: wrap);
+        width: 100%;
+    }
 }

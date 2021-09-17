@@ -1,7 +1,9 @@
 .settings {
   border: 1px solid $gray-color;
   border-top: 0;
-  padding: 10px 0;
+  border-left: 0;
+  
+ 
   .settings-container{
     @include flexy($disp: flex, $dir: column, $just: null);
     align-items: center;
@@ -153,4 +155,17 @@
 #button-3 .checkbox:checked ~ .layer
 {
     background-color: $gray-background;
+}
+
+
+
+//MEDIA QUERIES 
+
+@media screen and (min-width: 768px) {
+
+  .settings{
+    min-width: 50%;
+  }
+
+  
 }

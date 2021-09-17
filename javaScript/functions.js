@@ -46,7 +46,7 @@ function mobileUsers(){
     newCanvas.className = ".mobile-chart";
 
     let mobileUsers = new Chart(newCanvas, {
-        type:'pie',
+        type:'doughnut',
         data:trafficDataDaily,
         options:trafficOptions,
     })

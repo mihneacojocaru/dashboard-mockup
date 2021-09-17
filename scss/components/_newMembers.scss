@@ -1,6 +1,7 @@
 .new-members {
   border: 1px solid $gray-color;
   border-top: 0;
+  border-left: 0;
   .new-members-cards{
     @include flexy($disp: flex, $dir: column, $just: center);
     align-items: center;
@@ -20,12 +21,47 @@
     &:last-child{
       border: 0;
     }
+
+    .card-content{
+      @include flexy($disp: flex, $dir: column, $just: center);
+      align-items: center;
+
+      .card-info{
+        @include flexy($disp: flex, $dir: column, $just: center);
+        align-items: center;
+        & :nth-child(2){
+
+          color: $primary-background;
+
+        }
+
+      }
+    }
   }
 
   span{
     padding: 3px 0;
   }
-  span:nth-child(3){
-    color: $primary-background;
+}
+
+
+@media screen and (min-width:768px){
+
+  .member-card{
+    @include flexy($dir: row!important, $just:space-between!important);
+    max-width: 100%!important;
+  }
+
+  .card-content{
+    @include flexy($dir: row!important, $just:space-between!important);
+    span{
+      display: block;
+      margin: 10px;
+    }
+  }
+
+  .card-info{
+    padding: 10px;
+    align-items: flex-start !important;
   }
 }

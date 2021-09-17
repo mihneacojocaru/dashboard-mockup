@@ -43,7 +43,7 @@ let trafficDataDaily = {
   datasets: [
     {
       data: [ 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500, 750, 1250, 1000],
-      backgroundColor: "#7476c0",
+      backgroundColor: ["#7476c0","#be0027","cf8d2e"],
 
       borderWidth: 1,
     },
@@ -69,7 +69,7 @@ let trafficDataWeekly = {
   datasets: [
     {
       data: [750, 1250, 1000, 1850, 2250, 1500, 2500, 2000, 1500, 1750, 1250],
-      backgroundColor: "#7476c0",
+      backgroundColor: ["#7476c0","#be0027","cf8d2e","e4e932"],
 
       borderWidth: 1,
     },

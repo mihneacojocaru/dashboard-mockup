@@ -1,5 +1,8 @@
 .alert {
   //
+
+  
+  
   padding: 15px 30px;
   .alertBtn {
     background-color: $primary-background;
@@ -8,6 +11,8 @@
     border-radius: 10px;
     @include flexy($disp: flex, $dir: null, $wrap: null, $just: space-between);
     @include buttonBehaviour;
+    max-width: 800px;
+    margin:  0 auto;
   }
 
   #alertClose {
@@ -17,6 +22,6 @@
 }
 
 .moveRight {
-  transform: translateX(110%);
+  transform: translateX(200%);
   transition: 0.8s ease;
 }

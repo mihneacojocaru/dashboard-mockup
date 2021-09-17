@@ -1,6 +1,7 @@
 .recent-activity {
   border: 1px solid $gray-color;
   border-top: 0;
+  border-left: 0;
   .recent-activity-cards{
     @include flexy($disp: flex, $dir: column, $just: center);
     align-items: center;
@@ -20,13 +21,37 @@
     span{
       text-align: center;
     }
-    span:nth-child(2){
-      cursor: pointer;
-    }
+    
 
     &:last-child{
       border: 0;
     }
   }
 
+  .member-info-2{
+    @include flexy($disp: flex, $dir: column, $just: center);
+    align-items: center;
+    & :nth-child(1){
+      cursor: pointer;
+    }
+  }
+
+}
+
+@media screen and (min-width:768px){
+
+  .member-card-2{
+    min-width: 90%;
+    @include flexy($disp: flex, $dir: row!important, $just: flex-start !important);
+    align-items: center;
+  }
+
+  .member-info-2{
+    @include flexy($disp: flex, $dir: row, $just: center);
+    align-items: flex-start !important;
+    margin: 10px 0 10px 20px;
+    span{
+      padding: 5px 0;
+    }
+  }
 }

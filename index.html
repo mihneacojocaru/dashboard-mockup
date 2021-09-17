@@ -97,22 +97,22 @@
              </canvas>
         </div>
       </section>
-      <section class="daily-traffic">
-        <h3>DAILY TRAFFIC</h3>
-        <div class="daily-graph">
-            <canvas class="daily-chart">
-
-            </canvas>
-       </div>
-      </section>
-      <section class="mobile-user">
-        <h3>MOBILE USERS</h3>
-        <div class="mobile-graph">
-            <canvas class="mobile-chart">
-
-            </canvas>
-       </div>
-      </section>
+      <div class="d-flex">
+        <section class="daily-traffic">
+          <h3>DAILY TRAFFIC</h3>
+          <div class="daily-graph">
+              <canvas class="daily-chart">
+              </canvas>
+         </div>
+        </section>
+        <section class="mobile-user">
+          <h3>MOBILE USERS</h3>
+          <div class="mobile-graph">
+              <canvas class="mobile-chart">
+              </canvas>
+         </div>
+        </section>
+      </div>
       <section class="social-stats">
         <h3>SOCIAL STATS</h3>
         <div class="social-cards">
@@ -173,27 +173,43 @@
           <h3>NEW MEMBERS</h3>
           <div class="new-members-cards">
               <div class="member-card">
-                  <img src="assets/images/member-1.jpg" alt="girl profile picture">
-                  <span>Victoria Chambers</span>
-                  <span>victoria.chambers@example.com</span>
+                  <div class="card-content">
+                    <img src="assets/images/member-1.jpg" alt="girl profile picture">
+                    <div class="card-info">
+                      <span>Victoria Chambers</span>
+                      <span>victoria.chambers@example.com</span>
+                    </div>
+                  </div>
                   <span>10/05/2021</span>
               </div>
               <div class="member-card">
-                  <img src="assets/images/member-2.jpg" alt="girl profile picture">
-                  <span>Dalk Byrd</span>
-                  <span>dalk.byrd@example.com</span>
+                  <div class="card-content">
+                    <img src="assets/images/member-2.jpg" alt="girl profile picture">
+                    <div class="card-info">
+                      <span>Dalk Byrd</span>
+                      <span>dalk.byrd@example.com</span>
+                    </div>
+                  </div>
                   <span>15/10/2021</span>
               </div>
               <div class="member-card">
-                  <img src="assets/images/member-3.jpg" alt="girl profile picture">
-                  <span>Dawn Wood</span>
-                  <span>dawn.wood@example.com</span>
+                  <div class="card-content">
+                    <img src="assets/images/member-3.jpg" alt="girl profile picture">
+                    <div class="card-info">
+                      <span>Dawn Wood</span>
+                      <span>dawn.wood@example.com</span>
+                    </div>
+                  </div>
                   <span>07/07/2021</span>
               </div>
               <div class="member-card">
-                  <img src="assets/images/member-4.jpg" alt="girl profile picture">
-                  <span>Oliver Dan</span>
-                  <span>oliver.dan@example.com</span>
+                  <div class="card-content">
+                    <img src="assets/images/member-4.jpg" alt="girl profile picture">
+                    <div class="card-info">
+                      <span>Oliver Dan</span>
+                      <span>oliver.dan@example.com</span>
+                    </div>
+                  </div>
                   <span>12/08/2021</span>
               </div>
           </div>
@@ -203,67 +219,79 @@
           <div class="recent-activity-cards">
               <div class="member-card-2">
                 <img src="assets/images/member-1.jpg" alt="girl profile picture">
-                <span><strong>Victoria Chambers</strong> commented on <strong>WebApps's SEO Tips</strong></span>
-                <span>4 hours ago</span>
+                <div class="member-info-2">
+                  <span>
+                    <strong>Victoria Chambers</strong> commented on <strong>WebApps's SEO Tips</strong>
+                  </span>
+                  <span>4 hours ago</span>
+                </div>
               </div>
               <div class="member-card-2">
                 <img src="assets/images/member-2.jpg" alt="profile picture">
-                <span><strong>Dalk Byrd</strong> liked the post <strong>Facebook's Changes for 2021</strong></span>
-                <span>5 hours ago</span>
+                <div class="member-info-2">
+                  <span><strong>Dalk Byrd</strong> liked the post <strong>Facebook's Changes for 2021</strong></span>
+                  <span>5 hours ago</span>
+                </div>
               </div>
               <div class="member-card-2">
                 <img src="assets/images/member-3.jpg" alt="profile picture">
-                <span><strong>Dawn Wood</strong> commented on <strong>Facebook's Changes for 2021</strong></span>
-                <span>5 hours ago</span>
+                <div class="member-info-2">
+                  <span><strong>Dawn Wood</strong> commented on <strong>Facebook's Changes for 2021</strong></span>
+                  <span>5 hours ago</span>
+                </div>
               </div>
               <div class="member-card-2">
                 <img src="assets/images/member-4.jpg" alt="profile picture">
-                <span><strong>Dan Oliver</strong> posted <strong>WebApps's SEO Tips</strong></span>
-                <span>1 day ago</span>
+                <div class="member-info-2">
+                  <span><strong>Dan Oliver</strong> posted <strong>WebApps's SEO Tips</strong></span>
+                  <span>1 day ago</span>
+                </div>
               </div>
           </div>
       </section>
-      <section class="messages">
-          <h3>MESSAGE USER</h3>
-          <div class="messages-container">
-            <input type="text" placeholder="Search for user">
-            <textarea name="message" rows="7" cols="45" placeholder="Message for User"></textarea>
-            <span>SEND</span>
-          </div>
-      </section>
-      <section class="settings">
-          <h3>SETTINGS</h3>
-          <div class="settings-container">
-                <div class="toggle-container">
-                    <span>Send Email Notifications</span>
-                    <div class="button r" id="button-3">
-                        <input type="checkbox" class="checkbox">
-                        <div class="knobs"></div>
-                        <div class="layer"></div>
-                    </div>
-                    </div>
-                <div class="toggle-container">
-                    <span>Set Profile to Public</span>
-                    <div class="button r" id="button-3">
-                        <input type="checkbox" class="checkbox">
-                        <div class="knobs"></div>
-                        <div class="layer"></div>
-                    </div>
-                </div>
-                <select class="timeZones">
-                    <option value="none">Select a Time Zone</option>
-                    <option value="tz-1">Time Zone 1</option>
-                    <option value="tz-2">Time Zone 2</option>
-                    <option value="tz-3">Time Zone 3</option>
-                    <option value="tz-4">Time Zone 4</option>
-                </select>
-                <div class="setting-buttons">
-                    <button>SAVE</button>
-                    <button>CANCEL</button>
-                </div>
+      <div class="d-flex">
+        <section class="messages">
+            <h3>MESSAGE USER</h3>
+            <div class="messages-container">
+              <input type="text" placeholder="Search for user">
+              <textarea name="message" rows="7" cols="45" placeholder="Message for User"></textarea>
+              <span>SEND</span>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="settings">
+            <h3>SETTINGS</h3>
+            <div class="settings-container">
+                  <div class="toggle-container">
+                      <span>Send Email Notifications</span>
+                      <div class="button r" id="button-3">
+                          <input type="checkbox" class="checkbox">
+                          <div class="knobs"></div>
+                          <div class="layer"></div>
+                      </div>
+                      </div>
+                  <div class="toggle-container">
+                      <span>Set Profile to Public</span>
+                      <div class="button r" id="button-3">
+                          <input type="checkbox" class="checkbox">
+                          <div class="knobs"></div>
+                          <div class="layer"></div>
+                      </div>
+                  </div>
+                  <select class="timeZones">
+                      <option value="none">Select a Time Zone</option>
+                      <option value="tz-1">Time Zone 1</option>
+                      <option value="tz-2">Time Zone 2</option>
+                      <option value="tz-3">Time Zone 3</option>
+                      <option value="tz-4">Time Zone 4</option>
+                  </select>
+                  <div class="setting-buttons">
+                      <button>SAVE</button>
+                      <button>CANCEL</button>
+                  </div>
+              </div>
+          </div>
+            </section>
+      </div>
     </main>
     <script src="javaScript/trafficData.js"></script>
     <script src="javaScript/functions.js"></script>

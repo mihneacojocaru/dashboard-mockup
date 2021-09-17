@@ -2,3 +2,18 @@
   border: 1px solid $gray-color;
   border-top: 0;
 }
+
+.mobile-graph{
+  @extend %w-100;
+ }
+
+@media screen and (min-width:768px){
+    .mobile-user{
+      width: 50%;
+      display: inline-block;
+      border-top: 1px solid gray;
+      border-left: 1px solid gray;
+      border-right: 0;
+      border-bottom: 1px solid gray;
+    }
+}

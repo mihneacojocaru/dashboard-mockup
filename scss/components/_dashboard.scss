@@ -10,3 +10,9 @@
     background-color: $gray-background;
   }
 }
+
+@media (min-width: 768px) {
+  .dashboard{
+    justify-content: space-between;
+  }
+}

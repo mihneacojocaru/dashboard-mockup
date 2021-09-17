@@ -1,6 +1,7 @@
 .messages {
   border: 1px solid $gray-color;
   border-top: 0;
+  border-left: 0;
 
   .messages-container{
     @include flexy($disp: flex, $dir: column, $just: center);
@@ -36,4 +37,13 @@
       @include buttonBehaviour;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .messages{
+    min-width: 50%;
+  }
+  
+  
 }

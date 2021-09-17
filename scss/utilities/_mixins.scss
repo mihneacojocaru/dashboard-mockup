@@ -41,3 +41,11 @@
     border-color: $primary-background;
   }
 }
+
+%w-100{
+  max-width:100%;
+  padding: 10px;
+  @media (min-width: 768px){
+    max-width: 90%;
+  }
+}

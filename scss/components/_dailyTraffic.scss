@@ -2,3 +2,20 @@
   //
   border: 1px solid gray;
 }
+
+.daily-graph{
+  @extend %w-100;
+ }
+
+@media screen and (min-width:768px){
+
+ .daily-traffic{
+   width: 50%;
+   display: inline-block;
+   border-top: 1px solid gray;
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 1px solid gray;
+ }   
+
+}
